@@ -5,193 +5,151 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="noindex,nofollow" name="robots"/>
-<title>秋山さんのX ベンチマーク</title>
+<title>X ベンチマーク</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap" rel="stylesheet"/>
 <style>
   :root{
     --paper:#f7f3ec; --paper2:#efe8dc; --ink:#1b2535; --ink2:#3a4762;
-    --brass:#b07d2b; --brass-soft:#e9d9b6; --line:rgba(27,37,53,.12); --line2:rgba(27,37,53,.18);
-    --card:#fffdf8;
+    --brass:#b07d2b; --brass-soft:#e9d9b6; --line:rgba(27,37,53,.12); --line2:rgba(27,37,53,.2); --card:#fffdf8;
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
   body{
     font-family:"Zen Kaku Gothic New",sans-serif; color:var(--ink); background:var(--paper);
-    line-height:1.7; font-weight:500; -webkit-font-smoothing:antialiased;
+    line-height:1.72; font-weight:500; -webkit-font-smoothing:antialiased;
     word-break:keep-all; overflow-wrap:anywhere;
     background-image:
-      radial-gradient(1200px 600px at 12% -8%, rgba(176,125,43,.10), transparent 60%),
-      radial-gradient(900px 500px at 100% 0%, rgba(27,37,53,.06), transparent 55%);
+      radial-gradient(1100px 560px at 10% -10%, rgba(176,125,43,.10), transparent 60%),
+      radial-gradient(900px 480px at 100% 0%, rgba(27,37,53,.05), transparent 55%);
   }
-  .wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
 
-  /* ── Hero ── */
-  header{padding:84px 0 40px;position:relative}
-  .kicker{display:inline-block;font-family:"JetBrains Mono",monospace;font-size:13px;letter-spacing:.04em;
-    color:var(--brass);font-weight:500;padding:7px 14px;border:1px solid var(--line2);border-radius:999px;background:var(--card)}
-  h1{font-family:"Clash Display",sans-serif;font-weight:700;letter-spacing:-.03em;line-height:1.04;
-    font-size:clamp(40px,7vw,76px);margin:22px 0 0;color:var(--ink)}
-  h1 .jp{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;display:block;font-size:clamp(26px,4.6vw,46px);letter-spacing:-.01em;margin-top:6px}
-  .lead{font-size:clamp(17px,2.1vw,20px);font-weight:700;color:var(--ink);max-width:760px;margin:26px 0 0;line-height:1.85}
-  .lead em{font-style:normal;color:var(--brass);font-weight:900}
-  .rule{height:8px;width:96px;background:var(--brass);border-radius:6px;margin:30px 0 0}
+  header{padding:64px 0 30px}
+  .kicker{display:inline-flex;align-items:center;gap:9px;font-family:"JetBrains Mono",monospace;font-size:12.5px;
+    letter-spacing:.05em;color:var(--brass);font-weight:700;padding:7px 14px;border:1px solid var(--line2);
+    border-radius:999px;background:var(--card)}
+  .kicker svg{width:13px;height:13px;fill:var(--ink)}
+  h1{font-family:"Clash Display",sans-serif;font-weight:700;letter-spacing:-.03em;line-height:1;
+    font-size:clamp(38px,6.4vw,66px);margin:18px 0 0;color:var(--ink)}
+  .sub{font-weight:900;font-size:clamp(15px,2vw,18px);color:var(--ink2);margin:14px 0 0}
+  .sub b{color:var(--brass)}
+  .rule{height:8px;width:88px;background:var(--brass);border-radius:6px;margin:24px 0 0}
 
-  /* ── 選び方 ── */
-  .why{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:38px 0 0}
-  .why .b{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 20px 22px}
-  .why .n{font-family:"JetBrains Mono",monospace;color:var(--brass);font-size:13px;font-weight:500}
-  .why h4{font-weight:900;font-size:17px;margin:8px 0 6px;letter-spacing:-.01em}
-  .why p{font-size:14.5px;color:var(--ink2);font-weight:500;line-height:1.75}
-
-  /* ── Section ── */
-  section{padding:54px 0 0}
-  .sec-head{display:flex;align-items:baseline;gap:14px;margin:0 0 24px}
-  .sec-head .tag{font-family:"JetBrains Mono",monospace;font-size:12px;font-weight:500;color:#fff;background:var(--ink);
-    padding:6px 11px;border-radius:7px;letter-spacing:.03em;white-space:nowrap}
-  .sec-head h2{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:clamp(22px,3vw,28px);letter-spacing:-.01em}
-  .sec-head .sub{color:var(--ink2);font-weight:700;font-size:14px;margin-left:auto;white-space:nowrap}
-
-  /* ── Cards (並列完全統一) ── */
-  .grid{display:grid;gap:18px}
-  .grid.g3{grid-template-columns:repeat(3,1fr)}
-  .grid.g2{grid-template-columns:repeat(2,1fr)}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin:40px 0 0}
   .card{background:var(--card);border:1px solid var(--line);border-top:7px solid var(--brass);
-    border-radius:16px;padding:0;display:flex;flex-direction:column;overflow:hidden;
-    box-shadow:0 1px 0 rgba(27,37,53,.04),0 18px 40px -28px rgba(27,37,53,.4)}
-  .card .top{padding:22px 22px 16px;border-bottom:1px solid var(--line);min-height:118px;display:flex;flex-direction:column;justify-content:center}
-  .handle{font-family:"JetBrains Mono",monospace;font-weight:500;font-size:16px;color:var(--ink)}
-  .role{font-weight:700;font-size:14px;color:var(--ink2);margin-top:4px;line-height:1.55}
-  .stat{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
-  .pill{font-size:12px;font-weight:700;color:var(--ink);background:var(--paper2);border:1px solid var(--line);border-radius:999px;padding:4px 11px}
-  .pill.b{background:var(--brass-soft);border-color:rgba(176,125,43,.35);color:#6e4d12}
-  .card .body{padding:18px 22px 24px;display:flex;flex-direction:column;gap:16px;flex:1}
-  .blk .lbl{font-family:"JetBrains Mono",monospace;font-size:11.5px;font-weight:500;color:var(--brass);letter-spacing:.05em;text-transform:uppercase}
-  .blk .txt{font-size:15px;font-weight:500;color:var(--ink);margin-top:5px;line-height:1.78}
-  .blk.use{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 15px;margin-top:auto}
+    border-radius:16px;display:flex;flex-direction:column;overflow:hidden;
+    box-shadow:0 1px 0 rgba(27,37,53,.04),0 18px 42px -30px rgba(27,37,53,.45)}
+
+  .id{display:flex;align-items:center;gap:13px;padding:18px 20px;border-bottom:1px solid var(--line);text-decoration:none}
+  .id .av{width:50px;height:50px;border-radius:50%;flex:none;background:var(--paper2);object-fit:cover;border:1px solid var(--line)}
+  .id .han{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:18px;color:var(--ink);line-height:1}
+  .id .go{margin-left:auto;display:inline-flex;align-items:center;gap:6px;font-family:"JetBrains Mono",monospace;
+    font-size:11.5px;font-weight:700;color:var(--ink2);background:var(--paper2);border:1px solid var(--line);
+    border-radius:999px;padding:6px 11px;white-space:nowrap}
+  .id .go svg{width:12px;height:12px;fill:var(--ink)}
+  .id:hover .han{color:var(--brass)}
+  .id:hover .go{border-color:var(--brass);color:var(--brass)}
+  .id:hover .go svg{fill:var(--brass)}
+
+  .body{padding:18px 20px 22px;display:flex;flex-direction:column;gap:15px;flex:1}
+  .blk .lbl{font-family:"JetBrains Mono",monospace;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+  .blk.take .lbl{color:var(--brass)}
   .blk.use .lbl{color:var(--ink2)}
-  .blk.use .txt{font-weight:700}
+  .blk .txt{font-size:15.5px;font-weight:700;color:var(--ink);margin-top:6px;line-height:1.8}
+  .blk.use{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 15px;margin-top:auto}
+  .blk.use .txt{font-weight:500}
+  .blk.use .ex{color:var(--ink);font-weight:700}
 
-  /* ── Closing ── */
-  .close{margin:60px 0 0;background:var(--ink);color:#f3eee3;border-radius:20px;padding:46px 40px;position:relative;overflow:hidden}
-  .close::after{content:"";position:absolute;inset:0;background:radial-gradient(700px 320px at 90% 0%,rgba(176,125,43,.22),transparent 60%);pointer-events:none}
-  .close h3{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:clamp(21px,2.8vw,28px);letter-spacing:-.01em;line-height:1.5}
-  .close h3 b{color:#e9c87a}
-  .close p{margin-top:16px;font-size:16px;font-weight:500;color:#cdd4e0;max-width:720px;line-height:1.85}
-  .close .next{margin-top:24px;display:inline-flex;align-items:center;gap:10px;font-weight:900;font-size:16px;color:#1b2535;background:#e9c87a;padding:13px 22px;border-radius:11px}
+  footer{padding:34px 0 60px;color:var(--ink2);font-size:13px;font-weight:500}
 
-  footer{padding:40px 0 60px;color:var(--ink2);font-size:13px;font-weight:500}
-
-  /* entrance */
-  .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s cubic-bezier(.16,1,.3,1),transform .6s cubic-bezier(.16,1,.3,1)}
+  .reveal{opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(.16,1,.3,1),transform .55s cubic-bezier(.16,1,.3,1)}
   .reveal.in{opacity:1;transform:none}
   @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
-
-  @media(max-width:880px){
-    .why,.grid.g3,.grid.g2{grid-template-columns:1fr}
-    .sec-head{flex-wrap:wrap}.sec-head .sub{margin-left:0;width:100%}
-    .card .top{min-height:0}
-  }
+  @media(max-width:760px){ .grid{grid-template-columns:1fr} }
 </style>
 <style id="budoux-style">body{word-break:keep-all;overflow-wrap:anywhere;line-break:strict;}</style></head>
 <body>
 <div class="wrap">
 <header>
-<span class="kicker reveal">X BENCHMARK ／ AI×経営</span>
-<h1 class="reveal">Benchmark<span class="jp">秋山さんの​X ベンチマーク</span></h1>
-<p class="lead reveal">バズ屋ではなく、<em>​経営・事業の​中身を​自分の​言葉で​語って​伸ばしている</em>​5アカウント。​規模が​近い人は​今日から​型を​借りられ、​規模が​上の​人は​型の​参考に​なります。</p>
+<span class="kicker reveal">
+<svg viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+      X BENCHMARK
+    </span>
+<h1 class="reveal">Benchmark</h1>
+<p class="sub reveal">各アカウントから<b>​拾う​型</b>と、<b>​秋山さんでの​使い方</b>。</p>
 <div class="rule reveal"></div>
-<div class="why">
-<div class="b reveal"><div class="n">01</div><h4>AI×経営で​選ぶ</h4><p>「AIツールの​使い方」ではなく、​経営・営業・組織の​中身が​主語の​アカウントだけ。​秋山さんの​ポジションと​重なります。</p></div>
-<div class="b reveal"><div class="n">02</div><h4>実際に​届いている</h4><p>一発の​バズではなく、​普段の​投稿が​安定して​届いている​人を​実データで​選別。​底が​高い​＝​再現性が​ある。</p></div>
-<div class="b reveal"><div class="n">03</div><h4>真似られる​距離</h4><p>規模が​近い人を​中心に。​雲の​上の​成功談ではなく、​秋山さんが​明日から​動ける​型を​持つ人を​優先しました。</p></div>
-</div>
 </header>
-<section>
-<div class="sec-head reveal">
-<span class="tag">まず型を​借りる</span>
-<h2>規模が​近い・​今​日から​動ける</h2>
-<span class="sub">等身大ベンチ</span>
-</div>
-<div class="grid g3">
+<div class="grid">
 <article class="card reveal">
-<div class="top">
-<div class="handle">@tokumahata</div>
-<div class="role">は​たとくま｜事業家・総勢150名を​経営</div>
-<div class="stat"><span class="pill">フォロワー 1.2万</span><span class="pill b">記事の​保存 1,600超</span></div>
-</div>
+<a class="id" href="https://x.com/tokumahata" onclick="return openX('tokumahata')">
+<img alt="tokumahata" class="av" height="50" loading="lazy" src="https://pbs.twimg.com/profile_images/1800807703604019200/vIAbU2Lf_400x400.jpg" width="50"/>
+<span class="han">@tokumahata</span>
+<span class="go">開く<svg viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></span>​
+</a>
 <div class="body">
-<div class="blk"><div class="lbl">型</div><div class="txt">経営・組織の​濃い​知見を​1本の​note記事に​まとめ、​Xでは​シンプルに​告知。​読者が​「後で​読む」​ために​保存​（ブックマーク）​していく。</div></div>
-<div class="blk use"><div class="lbl">秋山さんの​活かし方</div><div class="txt">「社員1人を​1年で​60人に​した​全手順」​「採用コストを​20万→2万に​した方​法」を​記事化して​告知。​実績が​そのまま​弾に​なります。</div></div>
+<div class="blk take"><div class="lbl">拾う</div><div class="txt">濃い​知見を​1本の​note記事に。​Xは​「まとめました​＋リンク」だけ。​中身で​保存​（ブクマ）を​稼ぐ。</div></div>
+<div class="blk use"><div class="lbl">秋山さんなら</div><div class="txt"><span class="ex">「1人の​会社を​1年で​60人に​した​採用の​全手順」</span>を​noteに。​Xは​一言＋リンクで​保存が​伸びる。</div></div>
 </div>
 </article>
 <article class="card reveal">
-<div class="top">
-<div class="handle">@Tsunoda_LegalOn</div>
-<div class="role">LegalOn Technologies CEO​（本人）</div>
-<div class="stat"><span class="pill">経営者本人</span><span class="pill">SaaS・起業</span></div>
-</div>
+<a class="id" href="https://x.com/Tsunoda_LegalOn" onclick="return openX('Tsunoda_LegalOn')">
+<img alt="Tsunoda_LegalOn" class="av" height="50" loading="lazy" src="https://pbs.twimg.com/profile_images/2041083956754534400/fXSuk_VL_400x400.jpg" width="50"/>
+<span class="han">@Tsunoda_LegalOn</span>
+<span class="go">開く<svg viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></span>​
+</a>
 <div class="body">
-<div class="blk"><div class="lbl">型</div><div class="txt">経営者本人が、​自社の​生々しい​数字や本音を​率直に​開示する。​「この​数字、​何かが​バグってる」のような​等身大の​一言が​共感を​呼ぶ。</div></div>
-<div class="blk use"><div class="lbl">秋山さんの​活かし方</div><div class="txt">自分の​事業の​数字や​葛藤を、​飾らず​率直に。​等身大の​本音​その​ものが​信頼の​材料に​なります。</div></div>
+<div class="blk take"><div class="lbl">拾う</div><div class="txt">自社の​数字と​本音を、​飾らず​そのまま​出す。​等身大の​率直さが​信頼に​なる。</div></div>
+<div class="blk use"><div class="lbl">秋山さんなら</div><div class="txt"><span class="ex">「月商1000万→1億の​時、​最初の​2ヶ月は​何も​動かなかった」</span>と、​成功の​中の​効かなかった本音を​数字で。</div></div>
 </div>
 </article>
 <article class="card reveal">
-<div class="top">
-<div class="handle">@consul_ichinose</div>
-<div class="role">戦略コンサルOB・経営／キャリア知見</div>
-<div class="stat"><span class="pill">フォロワー 0.5万</span><span class="pill b">毎回​ 数千〜数万に​届く</span></div>
-</div>
+<a class="id" href="https://x.com/consul_ichinose" onclick="return openX('consul_ichinose')">
+<img alt="consul_ichinose" class="av" height="50" loading="lazy" src="https://pbs.twimg.com/profile_images/2049643664595677184/ZF-qy9p3_400x400.jpg" width="50"/>
+<span class="han">@consul_ichinose</span>
+<span class="go">開く<svg viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></span>​
+</a>
 <div class="body">
-<div class="blk"><div class="lbl">型</div><div class="txt">「〜で​一番​伸びるのは​〇〇だ」と、​現場で​得た​断定知見を​短く​言い​切る。​説明しすぎず、​一点に​絞る。</div></div>
-<div class="blk use"><div class="lbl">秋山さんの​活かし方</div><div class="txt">「営業で​一番​効くのは​商談数ではなく​〇〇」​「採用で​効くのは​条件ではなく​〇〇」など、​現場の​断定を​短く。</div></div>
-</div>
-</article>
-</div>
-</section>
-<section>
-<div class="sec-head reveal">
-<span class="tag">型の​参考</span>
-<h2>規模は​上・型を​学ぶ</h2>
-<span class="sub">目標ベンチ</span>
-</div>
-<div class="grid g2">
-<article class="card reveal">
-<div class="top">
-<div class="handle">@StockSun_ceo</div>
-<div class="role">StockSun代表・​デジタルマーケ支援1,000社</div>
-<div class="stat"><span class="pill">フォロワー 11万</span><span class="pill">経営×マーケ実務</span></div>
-</div>
-<div class="body">
-<div class="blk"><div class="lbl">型​（ここを​借りる）</div><div class="txt">経営×マーケの​実務知見を、​数字と​顧客実感で​語る。​経営者と​しての​存在感を​そのまま​発信力に​変えている。</div></div>
-<div class="blk use"><div class="lbl">見る​ポイント</div><div class="txt">支援実績の​数字の​出し方と、​実務知見の​切り出し方。​タレント的な​企画は​秋山さんの​型ではないので​除いて​参照。</div></div>
+<div class="blk take"><div class="lbl">拾う</div><div class="txt">現場の​断定知見を​1ポスト1つだけ、​短く​言い​切る。​説明しすぎない。</div></div>
+<div class="blk use"><div class="lbl">秋山さんなら</div><div class="txt"><span class="ex">「採用で​一番​効くのは​給与でも​知名度でもなく、​最初の​3日の​任せ方」</span>のように​営業・採用・組織の​持論を​一言。</div></div>
 </div>
 </article>
 <article class="card reveal">
-<div class="top">
-<div class="handle">@yuusaku_buddica</div>
-<div class="role">BUDDICA代表・中古車D2C​「成長以外、​全て​死」</div>
-<div class="stat"><span class="pill">フォロワー 11万</span><span class="pill">経営者の​姿勢</span></div>
-</div>
+<a class="id" href="https://x.com/StockSun_ceo" onclick="return openX('StockSun_ceo')">
+<img alt="StockSun_ceo" class="av" height="50" loading="lazy" src="https://pbs.twimg.com/profile_images/1042753417595088899/va9mKaNt_400x400.jpg" width="50"/>
+<span class="han">@StockSun_ceo</span>
+<span class="go">開く<svg viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></span>​
+</a>
 <div class="body">
-<div class="blk"><div class="lbl">型​（ここを​借りる）</div><div class="txt">経営者と​しての​姿勢・顧客への​誠実な​対応・リーダー論を、​自分の​言葉で​見せる。​人柄が​信頼に​直結している。</div></div>
-<div class="blk use"><div class="lbl">見る​ポイント</div><div class="txt">クレームや本音への​向き合い方の​見せ方。​感動ストーリー狙いは​型ではないので、​姿勢の​出し方を​参照。</div></div>
+<div class="blk take"><div class="lbl">拾う</div><div class="txt">支援先の​「前→後」を​数字と​顧客実感で​語る。​実務知見の​切り出し方。</div></div>
+<div class="blk use"><div class="lbl">秋山さんなら</div><div class="txt"><span class="ex">「シェア0.4→4.6%に​した​時に​"やめた​"施策」</span>のように、​1社の​数字を​具体で。</div></div>
+</div>
+</article>
+<article class="card reveal">
+<a class="id" href="https://x.com/yuusaku_buddica" onclick="return openX('yuusaku_buddica')">
+<img alt="yuusaku_buddica" class="av" height="50" loading="lazy" src="https://pbs.twimg.com/profile_images/1937713550392492032/j56ZgikD_400x400.jpg" width="50"/>
+<span class="han">@yuusaku_buddica</span>
+<span class="go">開く<svg viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></span>​
+</a>
+<div class="body">
+<div class="blk take"><div class="lbl">拾う</div><div class="txt">経営者の​姿勢・誠実な​判断を、​実話で​見せる。​人柄が​信頼に​直結。</div></div>
+<div class="blk use"><div class="lbl">秋山さんなら</div><div class="txt"><span class="ex">クライアントに​"あえて​損する​判断を​した​"話</span>を​1つ。​中身より​姿勢が​伝わる。</div></div>
 </div>
 </article>
 </div>
-</section>
-<div class="close reveal">
-<h3>共通点は、<b>​AIツールの​使い方ではなく​「経営・事業の​中身」を​自分の​言葉で​語っている</b>​こと。</h3>
-<p>これは​秋山さんの​方​向性と​そのまま​重なります。​次は、​この​型​（特に​@tokumahata式の​「知見を​記事化→告知」）で、​秋山さんの​実績を​弾に​した​最初の​投稿を​一緒に​組み立てます。</p>
-<span class="next">次の​一手 → 最初の​投稿を​型に​当てはめて​作る</span>
-</div>
-<footer>X Benchmark for AKIYAMA ／ 2026-06 ／ 実データ​（フォロワー・到達数）に​基づき選定</footer>
+<footer>X Benchmark ／ 2026-06 ／ アカウント名タップで​プロフィールへ</footer>
 </div>
 <script>
-  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
-  document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(Math.min(i,6)*60)+'ms';io.observe(el)});
+  function openX(h){
+    var t=Date.now();
+    setTimeout(function(){ if(Date.now()-t<1400) location.href='https://x.com/'+h; },650);
+    location.href='twitter://user?screen_name='+h;
+    return false;
+  }
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el,i){el.style.transitionDelay=(Math.min(i,6)*55)+'ms';io.observe(el)});
 </script>
 </body>
 </html>
