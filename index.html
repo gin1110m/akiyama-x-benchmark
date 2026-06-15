@@ -19,7 +19,7 @@
   html{scroll-behavior:smooth}
   body{
     font-family:"Zen Kaku Gothic New",sans-serif; color:var(--ink); background:var(--paper);
-    line-height:1.72; font-weight:500; -webkit-font-smoothing:antialiased;
+    line-height:1.74; font-weight:500; -webkit-font-smoothing:antialiased;
     word-break:keep-all; overflow-wrap:anywhere;
     background-image:
       radial-gradient(1100px 560px at 10% -10%, rgba(176,125,43,.10), transparent 60%),
@@ -27,25 +27,25 @@
   }
   .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
 
-  header{padding:64px 0 30px}
+  header{padding:60px 0 26px}
   .kicker{display:inline-flex;align-items:center;gap:9px;font-family:"JetBrains Mono",monospace;font-size:12.5px;
     letter-spacing:.05em;color:var(--brass);font-weight:700;padding:7px 14px;border:1px solid var(--line2);
     border-radius:999px;background:var(--card)}
   .kicker svg{width:13px;height:13px;fill:var(--ink)}
   h1{font-family:"Clash Display",sans-serif;font-weight:700;letter-spacing:-.03em;line-height:1;
-    font-size:clamp(38px,6.4vw,66px);margin:18px 0 0;color:var(--ink)}
-  .sub{font-weight:900;font-size:clamp(15px,2vw,18px);color:var(--ink2);margin:14px 0 0}
+    font-size:clamp(38px,6.4vw,64px);margin:18px 0 0;color:var(--ink)}
+  .sub{font-weight:900;font-size:clamp(15px,2vw,18px);color:var(--ink2);margin:13px 0 0}
   .sub b{color:var(--brass)}
-  .rule{height:8px;width:88px;background:var(--brass);border-radius:6px;margin:24px 0 0}
+  .rule{height:8px;width:88px;background:var(--brass);border-radius:6px;margin:22px 0 0}
 
-  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin:40px 0 0}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin:38px 0 0}
   .card{background:var(--card);border:1px solid var(--line);border-top:7px solid var(--brass);
     border-radius:16px;display:flex;flex-direction:column;overflow:hidden;
     box-shadow:0 1px 0 rgba(27,37,53,.04),0 18px 42px -30px rgba(27,37,53,.45)}
 
-  .id{display:flex;align-items:center;gap:13px;padding:18px 20px;border-bottom:1px solid var(--line);text-decoration:none}
-  .id .av{width:50px;height:50px;border-radius:50%;flex:none;background:var(--paper2);object-fit:cover;border:1px solid var(--line)}
-  .id .han{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:18px;color:var(--ink);line-height:1}
+  .id{display:flex;align-items:center;gap:13px;padding:17px 20px;border-bottom:1px solid var(--line);text-decoration:none}
+  .id .av{width:48px;height:48px;border-radius:50%;flex:none;background:var(--paper2);object-fit:cover;border:1px solid var(--line)}
+  .id .han{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:17px;color:var(--ink);line-height:1}
   .id .go{margin-left:auto;display:inline-flex;align-items:center;gap:6px;font-family:"JetBrains Mono",monospace;
     font-size:11.5px;font-weight:700;color:var(--ink2);background:var(--paper2);border:1px solid var(--line);
     border-radius:999px;padding:6px 11px;white-space:nowrap}
@@ -55,13 +55,14 @@
   .id:hover .go svg{fill:var(--brass)}
 
   .body{padding:18px 20px 22px;display:flex;flex-direction:column;gap:15px;flex:1}
-  .blk .lbl{font-family:"JetBrains Mono",monospace;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
-  .blk.take .lbl{color:var(--brass)}
-  .blk.use .lbl{color:var(--ink2)}
-  .blk .txt{font-size:15.5px;font-weight:700;color:var(--ink);margin-top:6px;line-height:1.8}
-  .blk.use{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 15px;margin-top:auto}
-  .blk.use .txt{font-weight:500}
-  .blk.use .ex{color:var(--ink);font-weight:700}
+  .lbl{font-family:"JetBrains Mono",monospace;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+  .ess .lbl{color:var(--brass)}
+  .ess .txt{font-size:15px;font-weight:700;color:var(--ink);margin-top:6px;line-height:1.82}
+  .ess .note{font-size:12.5px;font-weight:700;color:var(--ink2);margin-top:7px}
+  .post{margin-top:auto;background:var(--paper);border:1px solid var(--line);border-radius:13px;padding:15px 16px 16px}
+  .post .lbl{color:var(--ink2)}
+  .post .tw{font-size:14.5px;font-weight:500;color:var(--ink);margin-top:8px;line-height:1.92}
+  .post .tw .flow{display:block;font-weight:700;margin:2px 0}
 
   footer{padding:34px 0 60px;color:var(--ink2);font-size:13px;font-weight:500}
 
@@ -79,67 +80,67 @@
       X BENCHMARK
     </span>
 <h1 class="reveal">Benchmark</h1>
-<p class="sub reveal">各アカウントから<b>​拾う​型</b>と、<b>​秋山さんでの​使い方</b>。</p>
+<p class="sub reveal">各アカの<b>​伸びている​理由​（本質）</b>と、<b>​秋山さんなら​こう​書く</b>。</p>
 <div class="rule reveal"></div>
 </header>
 <div class="grid">
 <article class="card reveal">
 <a class="id" href="https://x.com/tokumahata" onclick="return openX('tokumahata')">
-<img alt="tokumahata" class="av" height="50" loading="lazy" src="https://pbs.twimg.com/profile_images/1800807703604019200/vIAbU2Lf_400x400.jpg" width="50"/>
+<img alt="tokumahata" class="av" height="48" loading="lazy" src="https://pbs.twimg.com/profile_images/1800807703604019200/vIAbU2Lf_400x400.jpg" width="48"/>
 <span class="han">@tokumahata</span>
 <span class="go">開く<svg viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></span>​
 </a>
 <div class="body">
-<div class="blk take"><div class="lbl">拾う</div><div class="txt">濃い​知見を​1本の​note記事に。​Xは​「まとめました​＋リンク」だけ。​中身で​保存​（ブクマ）を​稼ぐ。</div></div>
-<div class="blk use"><div class="lbl">秋山さんなら</div><div class="txt"><span class="ex">「1人の​会社を​1年で​60人に​した​採用の​全手順」</span>を​noteに。​Xは​一言＋リンクで​保存が​伸びる。</div></div>
+<div class="ess"><div class="lbl">伸びる​本質</div><div class="txt">自分の​具体的な​体験と​実数から​入り、​最後に​経営の​普遍則へ​持ち上げる。​雑談に​見えて​「学び」を​持ち帰らせる​帰納の​型。</div></div>
+<div class="post"><div class="lbl">秋山さんなら​こう​書く</div><div class="tw">採用コストを​20万から​2万まで、​90%落とした。​以前​COOを​務めた​D2Cアパレルでの​話だ。​やったのは​広告費の​積み増しじゃない。​求人媒体を​止め、​社員と​取引先からの​紹介に​経路を​寄せただけ。​採用は​集客じゃなく、​信頼の​波及。​安く​採れる​会社は、​まず​社内が​回っている。</div></div>
 </div>
 </article>
 <article class="card reveal">
 <a class="id" href="https://x.com/Tsunoda_LegalOn" onclick="return openX('Tsunoda_LegalOn')">
-<img alt="Tsunoda_LegalOn" class="av" height="50" loading="lazy" src="https://pbs.twimg.com/profile_images/2041083956754534400/fXSuk_VL_400x400.jpg" width="50"/>
+<img alt="Tsunoda_LegalOn" class="av" height="48" loading="lazy" src="https://pbs.twimg.com/profile_images/2041083956754534400/fXSuk_VL_400x400.jpg" width="48"/>
 <span class="han">@Tsunoda_LegalOn</span>
 <span class="go">開く<svg viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></span>​
 </a>
 <div class="body">
-<div class="blk take"><div class="lbl">拾う</div><div class="txt">自社の​数字と​本音を、​飾らず​そのまま​出す。​等身大の​率直さが​信頼に​なる。</div></div>
-<div class="blk use"><div class="lbl">秋山さんなら</div><div class="txt"><span class="ex">「月商1000万→1億の​時、​最初の​2ヶ月は​何も​動かなかった」</span>と、​成功の​中の​効かなかった本音を​数字で。</div></div>
+<div class="ess"><div class="lbl">伸びる​本質</div><div class="txt">実数や​違和感を​1行で​投げ、​外からは​見えない​経営の​内部​構造を​「考えながら」分解する。​当事者の​思考の​生中継。</div></div>
+<div class="post"><div class="lbl">秋山さんなら​こう​書く</div><div class="tw">社員が​1人から​60人に​増えた​1年で、​一番​効いたのは​増員じゃなかった。​人を​増やすほど、​増えた​人を​回す仕事が​増える。​売上は​伸びるのに​営業利益が​出ない​時期が​必ず来る。​効いたのは、​一人​あたりが​見る​数字を​決める​こと。​それで​営業利益は​0から​1000万に​なった。​組織は、​足す前に​区切る。</div></div>
 </div>
 </article>
 <article class="card reveal">
 <a class="id" href="https://x.com/consul_ichinose" onclick="return openX('consul_ichinose')">
-<img alt="consul_ichinose" class="av" height="50" loading="lazy" src="https://pbs.twimg.com/profile_images/2049643664595677184/ZF-qy9p3_400x400.jpg" width="50"/>
+<img alt="consul_ichinose" class="av" height="48" loading="lazy" src="https://pbs.twimg.com/profile_images/2049643664595677184/ZF-qy9p3_400x400.jpg" width="48"/>
 <span class="han">@consul_ichinose</span>
 <span class="go">開く<svg viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></span>​
 </a>
 <div class="body">
-<div class="blk take"><div class="lbl">拾う</div><div class="txt">現場の​断定知見を​1ポスト1つだけ、​短く​言い​切る。​説明しすぎない。</div></div>
-<div class="blk use"><div class="lbl">秋山さんなら</div><div class="txt"><span class="ex">「採用で​一番​効くのは​給与でも​知名度でもなく、​最初の​3日の​任せ方」</span>のように​営業・採用・組織の​持論を​一言。</div></div>
+<div class="ess"><div class="lbl">伸びる​本質</div><div class="txt">世間の​常識を​一行で​否定し、​真因に​置き換える。​1ポストで​PREPを​完結させ、​自分の​現場の​実体験で​言い​切る。</div></div>
+<div class="post"><div class="lbl">秋山さんなら​こう​書く</div><div class="tw">利益が​出ないのは​売上が​足りないからだ、と​思われが​ちだが​逆だ。​以前​COOを​務めた​D2Cアパレルは、​月商1000万を​1億に​する​過程で、​まず​コスト構造を​直した。​売上を​10倍に​しても、​構造が​同じなら​利益は​残らない。​先に​直すのは、​売上じゃなく​構造だ。</div></div>
 </div>
 </article>
 <article class="card reveal">
 <a class="id" href="https://x.com/StockSun_ceo" onclick="return openX('StockSun_ceo')">
-<img alt="StockSun_ceo" class="av" height="50" loading="lazy" src="https://pbs.twimg.com/profile_images/1042753417595088899/va9mKaNt_400x400.jpg" width="50"/>
+<img alt="StockSun_ceo" class="av" height="48" loading="lazy" src="https://pbs.twimg.com/profile_images/1042753417595088899/va9mKaNt_400x400.jpg" width="48"/>
 <span class="han">@StockSun_ceo</span>
 <span class="go">開く<svg viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></span>​
 </a>
 <div class="body">
-<div class="blk take"><div class="lbl">拾う</div><div class="txt">支援先の​「前→後」を​数字と​顧客実感で​語る。​実務知見の​切り出し方。</div></div>
-<div class="blk use"><div class="lbl">秋山さんなら</div><div class="txt"><span class="ex">「シェア0.4→4.6%に​した​時に​"やめた​"施策」</span>のように、​1社の​数字を​具体で。</div></div>
+<div class="ess"><div class="lbl">伸びる​本質</div><div class="txt">結論と​本音を​先に​出し、​自社の​儲けの​構造を​番号フローで​分解。​実名の​数字で​「ポジショントークではない」を​担保する。<span class="note">​※令和の​虎キャラ・いじり芸は​別物。​借りるのは​「構造を​分解して​見せる」型だけ。</span></div></div>
+<div class="post"><div class="lbl">秋山さんなら​こう​書く</div><div class="tw">「マーケに​金を​使っても​売れない」と​相談に​来る​経営者は、​ほぼ​全員、​順番を​間違えている。<span class="flow">​① 利益が​出る​価格と​原価の​構造を​先に​直す</span><span class="flow">② 勝てる​客と​勝てない​客を​分け、​勝てる方だけ​広げる</span><span class="flow">​③ ​そこにだけ​広告を​寄せる</span>​口内清涼剤メーカーの​CMO代行では、​この​順番で​シェアを​0.4%から​4.61%にした。​集客の​前に、​構造を​直す。</div></div>
 </div>
 </article>
 <article class="card reveal">
 <a class="id" href="https://x.com/yuusaku_buddica" onclick="return openX('yuusaku_buddica')">
-<img alt="yuusaku_buddica" class="av" height="50" loading="lazy" src="https://pbs.twimg.com/profile_images/1937713550392492032/j56ZgikD_400x400.jpg" width="50"/>
+<img alt="yuusaku_buddica" class="av" height="48" loading="lazy" src="https://pbs.twimg.com/profile_images/1937713550392492032/j56ZgikD_400x400.jpg" width="48"/>
 <span class="han">@yuusaku_buddica</span>
 <span class="go">開く<svg viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></span>​
 </a>
 <div class="body">
-<div class="blk take"><div class="lbl">拾う</div><div class="txt">経営者の​姿勢・誠実な​判断を、​実話で​見せる。​人柄が​信頼に​直結。</div></div>
-<div class="blk use"><div class="lbl">秋山さんなら</div><div class="txt"><span class="ex">クライアントに​"あえて​損する​判断を​した​"話</span>を​1つ。​中身より​姿勢が​伝わる。</div></div>
+<div class="ess"><div class="lbl">伸びる​本質</div><div class="txt">通説に​「僕は​違う」と​顔を​出して​反論。​両極を​否定して​自分の​立ち位置を​示し、​最後は​実数で​着地する。<span class="note">​※父と​クルマ等の​感動ストーリーは​別物。​借りるのは​「逆張り→主観の​言い​切り→実数着地」だけ。</span></div></div>
+<div class="post"><div class="lbl">秋山さんなら​こう​書く</div><div class="tw">「失敗しても​いいから​挑戦させろ」が​いい上司の​条件、と​よく​言われる。​僕は​違うと​思う。​挑戦させる​前に、​勝てる​型を​渡すのが​先だ。​赤字だった​審美歯科を​3ヶ月で​黒字化した​時も、​やったのは​現場に​丸投げする​ことじゃない。​勝てる​型を​作って、​その上で​任せた。​「挑戦しろ」の​丸投げは、​優しさじゃなく​怠慢だ。</div></div>
 </div>
 </article>
 </div>
-<footer>X Benchmark ／ 2026-06 ／ アカウント名タップで​プロフィールへ</footer>
+<footer>X Benchmark ／ 2026-06 ／ 本質は​各アカの​実投稿を​解析。​アカウント名タップで​プロフィールへ</footer>
 </div>
 <script>
   function openX(h){
